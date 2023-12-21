@@ -1,0 +1,37 @@
+#header {
+    position: fixed;
+    z-index:9999;
+    width: 100%;
+}
+
+#header a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(116, 99, 99, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size:1.7rem;
+    font-weight: bold;
+}
+
+.header-inner ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size:1.6rem;
+    font-weight: bold;
+}
