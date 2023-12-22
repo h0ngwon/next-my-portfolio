@@ -2,6 +2,7 @@
 import useShowFramer from '@/app/hooks/useShowFramer';
 import { motion } from 'framer-motion';
 import styles from '../styles/Intro.module.css';
+import Image from 'next/image';
 
 const Intro = () => {
 	const { parent, item } = useShowFramer();
@@ -34,6 +35,11 @@ const Intro = () => {
 				<motion.h1 className={styles['intro-title']} variants={item}>
 					Hello
 				</motion.h1>
+                <motion.div>
+                    <p className={styles['tag1']}>
+                        <a href='#about'><Image src='/img/down-arrow.png' alt='arrow' width={70} height={70}/></a>
+                    </p>
+                </motion.div>
 			</motion.div>
 		</section>
 	);
