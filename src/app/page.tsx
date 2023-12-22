@@ -1,9 +1,10 @@
+import About from '@/components/About';
 import Header from '@/components/Header';
 import Intro from '@/components/Intro';
+import Skill from '@/components/Skill';
 import React from 'react';
 import '../styles/global.css';
 import '../styles/reset.css';
-import About from '@/components/About';
 
 const Home = () => {
 	return (
@@ -11,7 +12,8 @@ const Home = () => {
 			<Header />
 			<main id='main' role='main'>
 				<Intro />
-                <About/>
+				<About />
+				<Skill />
 			</main>
 		</React.Fragment>
 	);
