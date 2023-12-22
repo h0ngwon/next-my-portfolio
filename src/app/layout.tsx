@@ -1,21 +1,26 @@
+import { NextFontWithVariable } from 'next/dist/compiled/@next/font';
 import pretendard from 'next/font/local';
 import raleway from 'next/font/local';
 
-const pretend = pretendard({
+const pretend: NextFontWithVariable = pretendard({
 	src: './fonts/local/PretendardVariable.ttf',
-    variable: '--font--pretendard',
+	variable: '--font--pretendard',
 	weight: 'normal',
-    display: 'swap'
+	display: 'swap',
 });
 
-const rale = raleway({
+const rale: NextFontWithVariable = raleway({
 	src: './fonts/local/Raleway-VariableFont_wght.ttf',
-    variable: '--font-raleway',
+	variable: '--font-raleway',
 	weight: 'normal',
-    display: 'swap'
+	display: 'swap',
 });
 
-export const metadata = {
+export const metadata: {
+	title: string;
+	description: string;
+	keywords: string[];
+} = {
 	title: "Won's portfolio site",
 	description: "Won's portfolio site",
 	keywords: [
