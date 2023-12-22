@@ -17,8 +17,8 @@ const About = () => {
 				<motion.div className={styles['about-main']} variants={item}>
 					<motion.img
 						src='/img/about_1.png'
-						width={420}
-						height={420}
+						width={360}
+						height={360}
 						alt='about_1'
 					/>
 					<motion.article variants={item}>
