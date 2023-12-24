@@ -34,7 +34,6 @@ const Portfolio = () => {
 							href={portItem.portLink}
 						>
 							<motion.div
-								key={portItem.id}
 								className={styles['portfolio-card']}
 								variants={item}
 								whileHover={{

@@ -1,3 +1,36 @@
-#contact {
-    height: 100%;
+.contact-section {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact-inner {
+    transform-style: preserve-3d;
+    height: 40vh;
+    width:80%;
+    border-radius: 30px;
+    padding: 3rem;
+    margin: 2rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
 }

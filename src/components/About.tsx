@@ -2,7 +2,7 @@
 import useShowFramer from '@/app/hooks/useShowFramer';
 import { motion } from 'framer-motion';
 import styles from '../styles/About.module.css';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { DataContext } from '@/app/context/dataContext';
 
 const About = () => {
@@ -31,21 +31,21 @@ const About = () => {
 							<p className={styles['about-main-content']}>
 								{data?.about.aboutContent.map((aboutItem) => {
 									return (
-										<>
+										<React.Fragment key={aboutItem.id}>
 											<span
 												className={
 													styles[
 														'about-content-title'
 													]
 												}
-												key={aboutItem.id}
+												
 											>
 												{aboutItem.contentTitle}
 											</span>
-											{aboutItem.content.map((item) => (
-												<span key={aboutItem.id}>{item}</span>
+											{aboutItem.content.map((item, idx) => (
+												<span key={idx}>{item}</span>
 											))}
-										</>
+										</React.Fragment>
 									);
 								})}
 							</p>

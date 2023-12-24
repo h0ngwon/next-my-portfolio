@@ -10,6 +10,7 @@ import '../styles/reset.css';
 import { DataContext } from './context/dataContext';
 import data from '../../db.json';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 const Home = () => {
 	return (
@@ -23,6 +24,7 @@ const Home = () => {
 				<Portfolio />
                 <Contact/>
 			</main>
+            <Footer/>
 		</React.Fragment>
         </DataContext.Provider>
 	);
