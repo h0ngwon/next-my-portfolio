@@ -2,11 +2,12 @@
 import useShowFramer from '@/app/hooks/useShowFramer';
 import { motion } from 'framer-motion';
 import styles from '../styles/About.module.css';
-import data from '../../db.json';
+import { useContext } from 'react';
+import { DataContext } from '@/app/context/dataContext';
 
 const About = () => {
 	const { parent, item } = useShowFramer();
-
+	const data = useContext(DataContext);
 	return (
 		<section id={styles['about']}>
 			<motion.div
@@ -17,7 +18,7 @@ const About = () => {
 			>
 				<motion.div className={styles['about-main']} variants={item}>
 					<motion.img
-						src='/img/about_1.png'
+						src={data?.about.aboutMainImage}
 						width={360}
 						height={360}
 						alt='about_1'
@@ -25,35 +26,28 @@ const About = () => {
 					<motion.article variants={item}>
 						<motion.div>
 							<h1 className={styles['about-main-title']}>
-								{data.aboutMainTitle}
+								{data?.about.aboutMainTitle}
 							</h1>
 							<p className={styles['about-main-content']}>
-								<span className={styles['about-content-title']}>
-									🎓 Education
-								</span>
-								<span>
-									2012.03 - 2015.02 선린인터넷 고등학교
-									웹운영과 졸업
-								</span>
-								<span>
-									2016.03 - 2023.08 세종대학교 컴퓨터공학과
-									졸업
-								</span>
-								<span className={styles['about-content-title']}>
-									💻 Experience
-								</span>
-								<span>
-									2022.06 - 2022.06 2022 제 13회 창의설계
-									경진대회 (세종대학교)
-								</span>
-								<span>
-									2022.10 - 2022.12 우아한테크코스 5기
-									프리코스 - 웹 백엔드 / 서버
-								</span>
-								<span>
-									2023.10 - 2024.02 내일배움캠프 웹 프론트엔드
-									3기 수료
-								</span>
+								{data?.about.aboutContent.map((aboutItem) => {
+									return (
+										<>
+											<span
+												className={
+													styles[
+														'about-content-title'
+													]
+												}
+												key={aboutItem.id}
+											>
+												{aboutItem.contentTitle}
+											</span>
+											{aboutItem.content.map((item) => (
+												<span key={aboutItem.id}>{item}</span>
+											))}
+										</>
+									);
+								})}
 							</p>
 						</motion.div>
 					</motion.article>

@@ -17,16 +17,43 @@
 
 .portfolio-inner {
     display: grid;
+    place-items: center;
     width:100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .portfolio-card {
+    width:80%;
+    margin: 1rem;
     border-radius: 30px;
-    margin: 3rem;
     padding: 3rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
+}
+
+.portfolio-item-image-wrapper {
+    width: 350px;
+    height: 250px;
+}
+
+.portfolio-item-image-wrapper img {
+    width:100%;
+    height:100%;
+    object-fit: scale-down;
+    opacity: 0.9;
+}
+
+.portfolio-item-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.portfolio-item-content {
+
 }
