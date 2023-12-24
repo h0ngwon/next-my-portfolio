@@ -18,5 +18,6 @@
 
 .tag1 {
     background-color: var(--tag-color);
+    padding: 13px;
     border-radius: 50%;
 }

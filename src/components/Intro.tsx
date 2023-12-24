@@ -35,9 +35,9 @@ const Intro = () => {
 				<motion.h1 className={styles['intro-title']} variants={item}>
 					Hello
 				</motion.h1>
-                <motion.div>
+                <motion.div variants={item}>
                     <p className={styles['tag1']}>
-                        <a href='#about'><Image src='/img/down-arrow.png' alt='arrow' width={70} height={70}/></a>
+                        <a href='#about'><Image src='/img/down-arrow.png' alt='arrow' width={50} height={50}/></a>
                     </p>
                 </motion.div>
 			</motion.div>

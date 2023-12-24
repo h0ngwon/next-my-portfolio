@@ -1,0 +1,32 @@
+#portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.portfolio-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.portfolio-inner {
+    display: grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-card {
+    border-radius: 30px;
+    margin: 3rem;
+    padding: 3rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
