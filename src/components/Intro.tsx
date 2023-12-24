@@ -8,7 +8,7 @@ const Intro = () => {
 	const { parent, item } = useShowFramer();
 
 	return (
-		<section id={styles['intro']}>
+		<section id='intro' className={styles['intro-section']}>
 			<motion.div
 				variants={parent}
 				className={styles['intro-inner']}

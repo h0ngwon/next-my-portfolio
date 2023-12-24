@@ -9,7 +9,7 @@ const About = () => {
 	const { parent, item } = useShowFramer();
 	const data = useContext(DataContext);
 	return (
-		<section id={styles['about']}>
+		<section id='about' className={styles['about-section']}>
 			<motion.div
 				className={styles['about-inner']}
 				variants={parent}

@@ -4,7 +4,7 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .portfolio-title {
@@ -47,7 +47,7 @@
 }
 
 .portfolio-item-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -55,5 +55,5 @@
 }
 
 .portfolio-item-content {
-
+    font-size:24px;
 }

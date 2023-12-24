@@ -13,6 +13,10 @@
     --tag-color:#96C4E9;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 main {
     background-color:var(--bs-gray-100);
 }

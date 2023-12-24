@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import styles from '../styles/Contact.module.css';
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+	return <section id={styles['contact']}>test</section>;
+};
 
-export default Contact
+export default Contact;

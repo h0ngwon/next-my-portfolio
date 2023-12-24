@@ -1,4 +1,4 @@
-#about {
+.about-section {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -8,7 +8,7 @@
 
 .about-inner {
     transform-style: preserve-3d;
-    min-height: 80vh;
+    height: 60vh;
     width:80%;
     border-radius: 30px;
     padding: 3rem;

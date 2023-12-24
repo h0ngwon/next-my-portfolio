@@ -1,13 +1,13 @@
-'use client'
+'use client';
 import Image from 'next/image';
 import styles from '../styles/Header.module.css';
 
 const Header = () => {
 	return (
-		<header id={styles['header']} role='banner'>
+		<header id='header' className={styles['header-section']} role='banner'>
 			<div className={styles['header-inner']}>
 				<div className={styles['header-logo']}>
-					<a href='/'>
+					<a href='#intro'>
 						<Image
 							src='/img/logo.png'
 							alt='image'
@@ -20,16 +20,16 @@ const Header = () => {
 				<nav role='navigation' aria-label='메인 메뉴'>
 					<ul>
 						<li>
-							<a href='#'>ABOUT ME</a>
+							<a href='#about'>ABOUT ME</a>
 						</li>
 						<li>
-							<a href='#'>SKILL</a>
+							<a href='#skill'>SKILL</a>
 						</li>
 						<li>
-							<a href='#'>PORTFOLIO</a>
+							<a href='#portfolio'>PORTFOLIO</a>
 						</li>
 						<li>
-							<a href='#'>CONTACT</a>
+							<a href='#contact'>CONTACT</a>
 						</li>
 					</ul>
 				</nav>
