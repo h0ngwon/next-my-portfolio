@@ -23,24 +23,28 @@
     "portfolio": [
         {
             "id": "1",
+            "portLink": "https://github.com/h0ngwon/TEGO",
             "portImage": "/img/TEGO.png",
             "portTitle": "TEGO",
             "portContent": "테니스 센터 예약 서비스"
         },
         {
             "id": "2",
+            "portLink": "https://github.com/h0ngwon/NOA",
             "portImage": "/img/NoA.png",
             "portTitle": "NOA",
             "portContent": "NFT SNS 서비스"
         },
         {
             "id": "3",
+            "portLink": "https://github.com/h0ngwon/try-eat",
             "portImage": "/img/try-eat.png",
             "portTitle": "Try Eat",
             "portContent": "맛집 공유 커뮤니티 서비스"
         },
         {
             "id": "4",
+            "portLink": "https://github.com/h0ngwon/lets-travel",
             "portImage": "/img/lets-travel.png",
             "portTitle": "Let's Travel",
             "portContent": "여행지 추천 서비스"

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Skill = () => {
 	const { parent, item } = useShowFramer();
 	return (
-		<section id={styles['skill']}>
+		<section id='skill' className={styles['skill-section']}>
 			<motion.div
 				className={styles['skill-inner']}
 				variants={parent}
@@ -18,7 +18,7 @@ const Skill = () => {
                 </motion.div>
 				<motion.div
 					className={styles['skill-card-slider']}
-					variants={item}
+                    variants={item}
 				>
 					<input type='radio' id='1' name='sld' defaultChecked/>
 					<label htmlFor='1'></label>

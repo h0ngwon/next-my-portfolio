@@ -1,10 +1,11 @@
-#portfolio {
+.portfolio-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     width: 100vw;
-    min-height: 100vh;
+    height: 100%;
+    padding-top: 100px;
 }
 
 .portfolio-title {
@@ -19,24 +20,32 @@
     display: grid;
     place-items: center;
     width:100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.portfolio-inner a {
+    color:var(--black);
+    text-decoration: none;
+    text-align: center;
 }
 
 .portfolio-card {
     width:80%;
     margin: 1rem;
     border-radius: 30px;
-    padding: 3rem;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:column;
+    text-align: center;
 }
 
 .portfolio-item-image-wrapper {
     width: 350px;
-    height: 250px;
+    height: 40vh;
 }
 
 .portfolio-item-image-wrapper img {
@@ -47,9 +56,9 @@
 }
 
 .portfolio-item-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     margin: 20px;
 }
